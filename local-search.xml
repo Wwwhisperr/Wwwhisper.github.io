@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>记录一张迟迟没有完成的画</title>
+    <link href="/2022/07/15/demo05/"/>
+    <url>/2022/07/15/demo05/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>原想把色彩知识学完再完全细化上色的，但是还是因为各种各样的事情给搁置了，背景也不知道该怎么画，或许这张画将拖几年才能完成…至少在我学完色彩之后才能继续动笔，先放上来记录一下吧，记录当时看《犬夜叉》的快乐，这部二十多年前的动漫真的是经久不衰，除了经常重复的打怪场面和让人心塞的三角恋，其他项在我心里真的很完美，人物的个性刻画的很棒，角色各自的成长是真的在每一集的时光里有所体现，犬夜叉和戈薇的发糖时间真的甜到让人姨母笑得合不拢嘴</p><p>在这存一个拥有超全动漫资源的网址 <strong><a href="https://www.yhdmp.cc/">【樱花动漫】</a></strong> ,这上面基本没有找不到的动漫，犬夜叉全集+所有番外我基本都在上面追完了</p><p>顺便期待一下今年下半年和明年上半年的动漫，《鬼灭之刃第三季锻刀村篇》和《致不灭的你第二季》很快就要到了，还有《咒术回战第二季》，他们预计的上线时间都挤到一块了，这将是快乐加倍的日子哈哈哈哈哈</p><p><img src="/img/qycall.png" alt="犬夜叉"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日常叨叨念</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Pjax实现Aplayer音乐播放器全局不中断</title>
     <link href="/2022/07/14/demo04/"/>
     <url>/2022/07/14/demo04/</url>
