@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>CSS：水平居中/垂直居中/水平垂直居中</title>
+    <link href="/2023/02/22/page/"/>
+    <url>/2023/02/22/page/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul><li><p><strong><a href="#one">一、水平方向居中</a></strong></p></li><li><p><strong><a href="#two">二、垂直方向居中</a></strong></p></li><li><p><strong><a href="#three">三、水平垂直都居中</a></strong></p><!-- - *[3.1 flex：子项分配剩余空间](#three)*- *[3.2 align-self：控制单个子项自己在侧轴的排列方式](#three-one)*- *[3.3 order：定义子项排序顺序](#three-one)* --></li></ul><p><span id="one"></span></p><h2 id="一、水平方向居中"><a href="#一、水平方向居中" class="headerlink" title="一、水平方向居中"></a>一、水平方向居中</h2><h3 id="1、行内元素水平居中"><a href="#1、行内元素水平居中" class="headerlink" title="1、行内元素水平居中"></a>1、行内元素水平居中</h3><p>如果父元素是块级元素，可直接给父元素设置 <code>text-align:center</code>,如果父元素不是块级元素，就把父元素设置为块级元素（如添加<code>display:block</code>），再给父元素设置 <code>text-align:center</code></p><h3 id="2、块元素水平居中"><a href="#2、块元素水平居中" class="headerlink" title="2、块元素水平居中"></a>2、块元素水平居中</h3><h4 id="2-1-定宽和不定宽"><a href="#2-1-定宽和不定宽" class="headerlink" title="2.1 定宽和不定宽"></a>2.1 定宽和不定宽</h4><p> 2.1.1 父子元素定宽情况下：给需要居中的元素设置<code>margin:0 auto</code></p><p> 2.1.2 子元素不定宽情况下:默认子元素宽度和父元素一致，此时可以将子元素转化为行内块/行内元素，给父元素设置<code>text-align:center</code>,<code>display:inline-block</code>或<code>display:inline</code>,</p><h4 id="2-2-使用定位，子绝父相"><a href="#2-2-使用定位，子绝父相" class="headerlink" title="2.2 使用定位，子绝父相"></a>2.2 使用定位，子绝父相</h4><p>使用子绝父相（子元素绝对定位，父元素相对定位），设置子元素<code>left:50%</code>，使子元素左上角水平居中。可再用<code>transform:translateX(-50%)</code>，或者子元素定宽使用<code>margin-left:-(子元素宽度一半)px</code></p><h4 id="2-3-使用flex布局-不用考虑是否定宽"><a href="#2-3-使用flex布局-不用考虑是否定宽" class="headerlink" title="2.3 使用flex布局(不用考虑是否定宽)"></a>2.3 使用flex布局(不用考虑是否定宽)</h4><p>给父元素添加属性<code>display:flex</code>,<code>justify-content:center</code></p><p><img src="/img/article/chuizhi.png" alt="水平居中"></p><p><span id="two"></span></p><h2 id="二、垂直方向居中"><a href="#二、垂直方向居中" class="headerlink" title="二、垂直方向居中"></a>二、垂直方向居中</h2><h3 id="1、行内元素垂直居中"><a href="#1、行内元素垂直居中" class="headerlink" title="1、行内元素垂直居中"></a>1、行内元素垂直居中</h3><h4 id="1-1-单行行内元素"><a href="#1-1-单行行内元素" class="headerlink" title="1.1 单行行内元素"></a>1.1 单行行内元素</h4><p>在父元素设置行高等于父元素高度即可<code>line-height:父元素height</code></p><h4 id="1-2-多行的行内元素"><a href="#1-2-多行的行内元素" class="headerlink" title="1.2 多行的行内元素"></a>1.2 多行的行内元素</h4><p>父元素设置<code>display:table-cell</code>和<code>vertical-align:middle</code>即可</p><p>(注：vertical-align和text-align一样只能用在父级是行内元素的情况下，但父级为什么不能用inline-block而要table-cell？因为inline-block本质和块元素差不多，只是允许同一行有多个块，而table-cell却是一个可以设置宽高的行内元素)</p><h3 id="2、块元素垂直居中"><a href="#2、块元素垂直居中" class="headerlink" title="2、块元素垂直居中"></a>2、块元素垂直居中</h3><h4 id="2-1-使用定位，子绝父相"><a href="#2-1-使用定位，子绝父相" class="headerlink" title="2.1 使用定位，子绝父相"></a>2.1 使用定位，子绝父相</h4><p>子绝父相（子元素绝对定位，父元素相对定位）,再使子元素<code>top:50%</code>左上角垂直居中，可在使用<code>transform:translateY(50%)</code>或<code>margin-top:-(子元素高度一般)px</code></p><h4 id="2-2-使用flex布局"><a href="#2-2-使用flex布局" class="headerlink" title="2.2 使用flex布局"></a>2.2 使用flex布局</h4><p>给父元素添加<code>display:flex</code>和<code>align-items:center</code>即可</p><p><img src="/img/article/chuizhi1.png" alt="垂直居中"></p><p><span id="three"></span></p><h2 id="三、水平垂直都居中"><a href="#三、水平垂直都居中" class="headerlink" title="三、水平垂直都居中"></a>三、水平垂直都居中</h2><h3 id="1、已知高宽，子绝父相"><a href="#1、已知高宽，子绝父相" class="headerlink" title="1、已知高宽，子绝父相"></a>1、已知高宽，子绝父相</h3><p>1.1子绝父相（子元素绝对定位，父元素相对定位），在子元素设置<code>top: 0</code>,<code>right: 0</code>,<code>bottom: 0</code>,<code>left: 0</code>,<code>margin: auto</code></p><p>1.2 子绝父相（子元素绝对定位，父元素相对定位），<code>left: 50%</code>,<code>top: 50%</code>,<code>margin-left: -(元素宽度的一半)px</code>,<code>margin-top:-(元素高度的一半)px</code></p><h3 id="2、不知子元素高宽"><a href="#2、不知子元素高宽" class="headerlink" title="2、不知子元素高宽"></a>2、不知子元素高宽</h3><p>2.1 使用定位：子绝父相（子元素绝对定位，父元素相对定位），给子元素设置<code>left: 50%</code>,<code>top: 50%</code>,<code>transform: translate(-50%,-50%)</code></p><p>2.2 使用flex布局，给父元素<code>display:flex</code>,<code>justify-content:center</code>,<code>align-items: center</code></p><p><img src="/img/article/chuizhi2.png" alt="水平垂直居中"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>CSS</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ES6:JavaScript箭头函数的this指向与穿透问题</title>
     <link href="/2022/10/01/page/"/>
     <url>/2022/10/01/page/</url>
